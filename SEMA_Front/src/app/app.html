@@ -1,0 +1,164 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+
+<div class="container">
+  <header>
+    <img src="assets/sema_logo.png" alt="SEMA Aviation Logo" class="logo-img" />
+    <nav class="navbar">
+      <a href="#" class="active">Ana Sayfa</a>
+      <a href="#about">Hakkımızda</a>
+      <a href="#services">Projeler</a>
+      <a href="#team">Takım</a>
+      <a href="#contact">İletişim</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <div class="hero-text">
+      <div class="hero-title">SEMA Aviation<br />Yenilikçi İHA Takımı</div>
+      <div class="hero-sub">
+        SEMA Aviation, insansız hava araçları alanında yenilikçi çözümler geliştiren, genç ve dinamik bir ekiptir. Takımımız, mühendislik ve teknolojiye olan tutkusuyla Teknofest 2025’te ülkemizi en iyi şekilde temsil etmeyi hedeflemektedir.
+      </div>
+      <button class="hero-btn">Projeleri Keşfet</button>
+    </div>
+    <div class="hero-image">
+      <img src="assets/sergi.jpeg" alt="Yaratıcı Tasarım Görseli" />
+    </div>
+  </section>
+  <section class="intro-card" id="about">
+    <h2>Hakkımızda</h2>
+    <p>
+      SEMA Aviation, insansız hava araçları alanında yenilikçi çözümler geliştiren, genç ve dinamik bir ekiptir. Takımımız, mühendislik ve teknolojiye olan tutkusuyla Teknofest 2025’te ülkemizi en iyi şekilde temsil etmeyi hedeflemektedir.
+    </p>
+  </section>
+  <section class="vision-mission">
+    <div class="vision">
+      <h3>Vizyonumuz</h3>
+      <p>Türkiye'nin ve dünyanın havacılık teknolojilerinde öncü takımlarından biri olmak.</p>
+    </div>
+    <div class="mission">
+      <h3>Misyonumuz</h3>
+      <p>Yenilikçi, güvenli ve sürdürülebilir insansız hava araçları tasarlayarak sektöre değer katmak.</p>
+    </div>
+  </section>
+  <section class="team-section" id="team">
+    <h2>Takım Üyeleri</h2>
+    <div class="team-list">
+      <div class="team-card">
+        <img src="assets/takim_foto.jpeg" alt="Kaan Karaman" />
+        <div>
+          <h4>Kaan Karaman</h4>
+          <p>Takım Kaptanı</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <img src="assets/takim_foto.jpeg" alt="Furkan Demir" />
+        <div>
+          <h4>Furkan Demir</h4>
+          <p>Savaşan İHA Kaptanı</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <img src="assets/takim_foto.jpeg" alt="Emre Samur" />
+        <div>
+          <h4>Emre Samur</h4>
+          <p>Hava Savunma Sistemleri Kaptanı</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="projects-section" id="services">
+    <h2>Projelerimiz</h2>
+    <div class="projects-list">
+      <div class="project-card" [class.open]="openedProject === 1" (click)="openedProject = openedProject === 1 ? null : 1">
+        <div class="project-card-header">
+          <div>
+            <h3>Uluslararası İHA Yarışması</h3>
+            <p>2021, 2022, 2023, 2024, 2025</p>
+          </div>
+          <span class="arrow" [class.rotated]="openedProject === 1">&#9660;</span>
+        </div>
+        <div class="project-info" *ngIf="openedProject === 1">
+          <span>Takımımız, Uluslararası İHA Yarışması'nda yıllardır başarıyla yer almakta ve yenilikçi insansız hava aracı çözümleriyle öne çıkmaktadır.</span>
+          <a class="project-detail-btn" href="https://www.teknofest.org/tr/yarismalar/uluslararasi-insansiz-hava-araci-yarismasi/" target="_blank">Yarışma detayları için tıklayınız</a>
+        </div>
+      </div>
+      <div class="project-card" [class.open]="openedProject === 2" (click)="openedProject = openedProject === 2 ? null : 2">
+        <div class="project-card-header">
+          <div>
+            <h3>Savaşan İHA Yarışması</h3>
+            <p>2023, 2024, 2025</p>
+          </div>
+          <span class="arrow" [class.rotated]="openedProject === 2">&#9660;</span>
+        </div>
+        <div class="project-info" *ngIf="openedProject === 2">
+          <span>Otonom ve yapay zekâ tabanlı İHA’larımız ile Savaşan İHA Yarışması’nda mücadele ediyoruz.</span>
+          <a class="project-detail-btn" href="https://www.teknofest.org/tr/competitions/detail/savasan-iha-yarismasi-2025/" target="_blank">Yarışma detayları için tıklayınız</a>
+        </div>
+      </div>
+      <div class="project-card" [class.open]="openedProject === 3" (click)="openedProject = openedProject === 3 ? null : 3">
+        <div class="project-card-header">
+          <div>
+            <h3>Hava Savunma Sistemleri Yarışması</h3>
+            <p>2025</p>
+          </div>
+          <span class="arrow" [class.rotated]="openedProject === 3">&#9660;</span>
+        </div>
+        <div class="project-info" *ngIf="openedProject === 3">
+          <span>Hava savunma teknolojilerinde yenilikçi projelerimizle 2025 yarışmasında yer alıyoruz.</span>
+          <a class="project-detail-btn" href="https://www.teknofest.org/tr/competitions/detail/hava-savunma-sistemleri-yarismasi-2025/" target="_blank">Yarışma detayları için tıklayınız</a>
+        </div>
+      </div>
+    </div>
+    <h2 style="margin-top:2.5rem;">Gelecek Projelerimiz</h2>
+    <div class="projects-list">
+      <div class="project-card" [class.open]="openedProject === 4" (click)="openedProject = openedProject === 4 ? null : 4">
+        <div class="project-card-header">
+          <div>
+            <h3>2026 Savaşan İHA Yarışması</h3>
+          </div>
+          <span class="arrow" [class.rotated]="openedProject === 4">&#9660;</span>
+        </div>
+        <div class="project-info" *ngIf="openedProject === 4">
+          <span>Gelecek yıl için otonom savaşan İHA projelerimiz hazırlık aşamasında.</span>
+          <a class="project-detail-btn" href="https://www.teknofest.org/tr/competitions/detail/savasan-iha-yarismasi-2026/" target="_blank">Yarışma detayları için tıklayınız</a>
+        </div>
+      </div>
+      <div class="project-card" [class.open]="openedProject === 5" (click)="openedProject = openedProject === 5 ? null : 5">
+        <div class="project-card-header">
+          <div>
+            <h3>2026 Hava Savunma Sistemleri Yarışması</h3>
+          </div>
+          <span class="arrow" [class.rotated]="openedProject === 5">&#9660;</span>
+        </div>
+        <div class="project-info" *ngIf="openedProject === 5">
+          <span>2026 için yeni nesil hava savunma sistemleri projelerimiz yolda.</span>
+          <a class="project-detail-btn" href="https://www.teknofest.org/tr/competitions/detail/hava-savunma-sistemleri-yarismasi-2026/" target="_blank">Yarışma detayları için tıklayınız</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contact modern-contact" id="contact">
+    <h2>İletişim</h2>
+    <ul>
+      <li><strong>Email:</strong> semaaviation23@gmail.com</li>
+      <li><strong>Instagram:</strong> <a href="https://instagram.com/semaaviation" target="_blank">@semaaviation</a></li>
+    </ul>
+  </section>
+</div>
+<router-outlet />
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
