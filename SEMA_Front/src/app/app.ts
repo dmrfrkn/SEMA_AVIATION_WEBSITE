@@ -9,6 +9,34 @@ import { CommonModule } from '@angular/common';
   styleUrl: './app.scss'
 })
 export class App {
+  counters = [
+    { label: 'Tamamlanan Proje', value: 12, animatedValue: 0 },
+    { label: 'Kazanılan Ödül', value: 7, animatedValue: 0 },
+    { label: 'Takım Üyesi', value: 18, animatedValue: 0 },
+    { label: 'Uçuş Testi', value: 34, animatedValue: 0 }
+  ];
+
+  ngOnInit() {
+    this.animateCounters();
+  }
+
+  animateCounters() {
+    this.counters.forEach((counter, idx) => {
+      const duration = 1200; // ms
+      const frameRate = 24;
+      const totalFrames = Math.round(duration / (1000 / frameRate));
+      let frame = 0;
+      const increment = counter.value / totalFrames;
+      const interval = setInterval(() => {
+        frame++;
+        counter.animatedValue = Math.round(increment * frame);
+        if (frame >= totalFrames) {
+          counter.animatedValue = counter.value;
+          clearInterval(interval);
+        }
+      }, 1000 / frameRate);
+    });
+  }
   blogPosts = [
     {
       title: 'SEMA Aviation Teknofest 2025 Hazırlıkları',

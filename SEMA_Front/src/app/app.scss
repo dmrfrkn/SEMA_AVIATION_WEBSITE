@@ -1,3 +1,101 @@
+// Animasyonlu Sayaçlar modern görünüm
+
+.counter-section {
+  margin: 2.5rem 0 2.5rem 0;
+  display: flex;
+  justify-content: center;
+}
+.counter-list {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.counter-card {
+  background: linear-gradient(135deg, #181f2a 70%, #ffe08222 100%);
+  border-radius: 22px;
+  box-shadow: 0 4px 32px 0 rgba(255,224,130,0.10), 0 2px 12px rgba(0,0,0,0.13);
+  padding: 2.2rem 2.7rem 1.7rem 2.7rem;
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #ffe08233;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.25s, border 0.2s, background 0.2s, transform 0.18s;
+}
+.counter-card:hover {
+  box-shadow: 0 8px 32px 0 #ffe08244, 0 4px 24px rgba(255,224,130,0.13);
+  border: 2px solid #ffe082;
+  background: linear-gradient(135deg, #232b36 60%, #ffe08233 100%);
+  transform: translateY(-6px) scale(1.04);
+}
+.counter-card::after {
+  content: '';
+  position: absolute;
+  top: -40px; left: -40px;
+  width: 80px; height: 80px;
+  background: radial-gradient(circle, #ffe08255 0%, transparent 70%);
+  opacity: 0.7;
+  pointer-events: none;
+}
+.counter-icon {
+  margin-bottom: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #ffe08218;
+  box-shadow: 0 2px 8px #ffe08222;
+}
+.counter-value {
+  font-size: 2.9rem;
+  font-weight: 900;
+  color: #ffe082;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.01em;
+  transition: color 0.2s, transform 0.3s cubic-bezier(0.4,0,0.2,1);
+  text-shadow: 0 2px 8px #ffe08233;
+}
+.counter-value span {
+  display: inline-block;
+  animation: popUp 0.7s cubic-bezier(0.4,0,0.2,1);
+}
+@keyframes popUp {
+  0% { transform: scale(0.7); opacity: 0.2; }
+  60% { transform: scale(1.15); opacity: 1; }
+  100% { transform: scale(1); }
+}
+.counter-label {
+  color: #eaf6ff;
+  font-size: 1.18rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 0.2rem;
+  letter-spacing: 0.01em;
+}
+@media (max-width: 900px) {
+  .counter-list {
+    gap: 1.2rem;
+  }
+  .counter-card {
+    padding: 1.2rem 0.7rem 1.1rem 0.7rem;
+    min-width: 120px;
+  }
+  .counter-value {
+    font-size: 2rem;
+  }
+  .counter-label {
+    font-size: 1rem;
+  }
+  .counter-icon {
+    width: 36px;
+    height: 36px;
+  }
+}
 // Blog/Haberler modern görünüm
 .blog-section {
   margin: 3.5rem 0 2.5rem 0;
