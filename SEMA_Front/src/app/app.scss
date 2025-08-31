@@ -1,3 +1,101 @@
+// Blog/Haberler modern görünüm
+.blog-section {
+  margin: 3.5rem 0 2.5rem 0;
+  padding: 0 0.5rem;
+  h2 {
+    color: #ffe082;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    letter-spacing: 0.01em;
+  }
+}
+.blog-list {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+.blog-list::-webkit-scrollbar {
+  height: 8px;
+  background: #181f2a;
+}
+.blog-list::-webkit-scrollbar-thumb {
+  background: #232b36;
+  border-radius: 8px;
+}
+.blog-card {
+  scroll-snap-align: start;
+}
+@media (max-width: 900px) {
+  .blog-list {
+    gap: 1.1rem;
+    padding-bottom: 0.3rem;
+  }
+}
+.blog-card {
+  background: #181f2a;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.13);
+  padding: 1.2rem 1.5rem 1.1rem 1.5rem;
+  min-width: 270px;
+  max-width: 370px;
+  flex: 1 1 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  border: 2px solid transparent;
+  transition: box-shadow 0.2s, border 0.2s, background 0.2s;
+}
+.blog-card:hover {
+  box-shadow: 0 4px 24px rgba(255,224,130,0.13);
+  border: 2px solid #ffe082;
+  background: #232b36;
+}
+.blog-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.blog-date {
+  color: #ffe082;
+  font-size: 0.98rem;
+  font-weight: 500;
+  margin-bottom: 0.1rem;
+}
+.blog-title {
+  color: #eaf6ff;
+  font-size: 1.18rem;
+  font-weight: 700;
+  margin: 0;
+}
+.blog-desc {
+  color: #eaf6ff;
+  font-size: 1.04rem;
+  margin-bottom: 0.2rem;
+}
+.blog-link {
+  color: #ffe082;
+  font-weight: 600;
+  text-decoration: underline;
+  font-size: 1.01rem;
+  margin-top: 0.2rem;
+  align-self: flex-end;
+}
+@media (max-width: 900px) {
+  .blog-list {
+    flex-direction: column;
+    gap: 1.1rem;
+  }
+  .blog-card {
+    min-width: 0;
+    max-width: 100%;
+    padding: 1rem 0.7rem 1rem 0.7rem;
+  }
+}
 // SSS (Sıkça Sorulan Sorular) modern görünüm
 .faq-section {
   margin: 3.5rem 0 2.5rem 0;

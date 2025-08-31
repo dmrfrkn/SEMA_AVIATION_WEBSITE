@@ -9,6 +9,38 @@ import { CommonModule } from '@angular/common';
   styleUrl: './app.scss'
 })
 export class App {
+  blogPosts = [
+    {
+      title: 'SEMA Aviation Teknofest 2025 Hazırlıkları',
+      desc: 'Takımımız Teknofest 2025 için yeni İHA prototipleri ve otonom sistemler üzerinde çalışıyor. Gelişmeleri buradan takip edebilirsiniz.',
+      date: '30 Ağustos 2025',
+      link: ''
+    },
+    {
+      title: 'Yarışma Başarılarımız',
+      desc: '2024 ve 2025 yıllarında elde ettiğimiz ödüller ve yarışma deneyimlerimiz hakkında detaylar.',
+      date: '15 Temmuz 2025',
+      link: ''
+    },
+    {
+      title: 'Yeni Takım Üyeleri Aranıyor!',
+      desc: 'SEMA Aviation ekibine katılmak ister misin? Başvuru detayları ve aranan pozisyonlar için tıkla.',
+      date: '1 Haziran 2025',
+      link: ''
+    },
+    {
+      title: 'Otonom Uçuş Testi Başarıyla Tamamlandı',
+      desc: 'Takımımız, yeni geliştirdiği otonom İHA ile ilk uçuş testini başarıyla tamamladı. Detaylar için blogumuzu takip edin.',
+      date: '20 Mayıs 2025',
+      link: ''
+    },
+    {
+      title: 'SEMA Aviation’dan Sosyal Sorumluluk Projesi',
+      desc: 'Gençlere havacılık sevgisi aşılamak için düzenlediğimiz sosyal sorumluluk projemiz büyük ilgi gördü.',
+      date: '10 Nisan 2025',
+      link: ''
+    }
+  ];
   faqs = [
     { q: 'SEMA Aviation hangi alanlarda faaliyet gösteriyor?', a: 'İnsansız hava araçları, otonom sistemler ve havacılık teknolojileri alanında faaliyet göstermekteyiz.' },
     { q: 'Takıma nasıl katılabilirim?', a: 'Başvuru dönemlerinde sosyal medya hesaplarımızdan veya iletişim formumuzdan başvuru yapabilirsiniz.' },

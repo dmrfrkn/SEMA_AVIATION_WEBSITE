@@ -223,6 +223,21 @@
   </section>
 
   <!-- SSS (Sıkça Sorulan Sorular) Bölümü Başlangıç -->
+  <!-- Blog/Haberler Bölümü Başlangıç -->
+  <section class="blog-section" id="blog">
+    <h2>Blog & Haberler</h2>
+    <div class="blog-list">
+      <div class="blog-card" *ngFor="let post of blogPosts">
+        <div class="blog-header">
+          <span class="blog-date">{{post.date}}</span>
+          <h3 class="blog-title">{{post.title}}</h3>
+        </div>
+        <div class="blog-desc">{{post.desc}}</div>
+        <a *ngIf="post.link" class="blog-link" [href]="post.link" target="_blank">Devamını Oku</a>
+      </div>
+    </div>
+  </section>
+  <!-- Blog/Haberler Bölümü Bitiş -->
   <section class="faq-section" id="faq">
     <h2>Sıkça Sorulan Sorular</h2>
     <div class="faq-list">
