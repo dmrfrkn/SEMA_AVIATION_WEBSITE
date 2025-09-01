@@ -1,8 +1,8 @@
 <div class="form-bg">
-		<form (ngSubmit)="submitForm()" #visitorForm="ngForm" class="visitor-form">
-			<div class="form-logo">
-				<img src="assets/sema_logo.png" alt="Takım Logosu" />
-			</div>
+	<form (ngSubmit)="submitForm()" #visitorForm="ngForm" class="visitor-form">
+		<div class="form-logo">
+			<img src="assets/sema_logo.png" alt="Takım Logosu" />
+		</div>
 		<h2 class="form-title">Ziyaretçi Girişi</h2>
 		<div class="form-group">
 			<label for="name">Ad Soyad</label>
@@ -16,6 +16,17 @@
 			<label for="phone">Telefon Numarası</label>
 			<input id="phone" type="tel" [(ngModel)]="phone" name="phone" required placeholder="05xx xxx xx xx" pattern="^0[5-9]{1}[0-9]{9}$" maxlength="11" />
 		</div>
-		<button type="submit" [disabled]="!name || !email || !phone">Giriş Yap</button>
+		<div class="kvkk-box">
+					<div class="kvkk-text">
+						SEMA Aviation Teknofest Takımı olarak, web sitemize giriş esnasında sizden alınan isim, soyisim, e-posta ve telefon numarası bilgileriniz, yalnızca kullanıcı girişinizin sağlanması, iletişimin sürdürülebilmesi ve takım faaliyetleri hakkında bilgilendirme yapılması amacıyla <a href="https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6698&MevzuatTur=1&MevzuatTertip=5" target="_blank" style="color:#7c3aed;text-decoration:underline;">6698 sayılı Kişisel Verilerin Korunması Kanunu (“KVKK”)</a> kapsamında işlenecektir.<br><br>
+						Toplanan kişisel verileriniz hiçbir şekilde üçüncü kişilerle paylaşılmayacak, yalnızca yukarıda belirtilen amaçlarla sınırlı olarak kullanılacak ve güvenli bir şekilde saklanacaktır. KVKK kapsamında dilediğiniz zaman verilerinizin silinmesini, düzeltilmesini veya tarafınıza bildirilmesini talep edebilirsiniz.<br><br>
+						Web sitemize giriş yaparak kişisel verilerinizin belirtilen amaçlar doğrultusunda işlenmesine açık rıza göstermiş oluyorsunuz.
+					</div>
+			<div class="kvkk-confirm">
+				<input type="checkbox" id="kvkk" [(ngModel)]="kvkkAccepted" name="kvkkAccepted" required />
+				<label for="kvkk">KVKK metnini okudum ve onaylıyorum.</label>
+			</div>
+		</div>
+		<button type="submit" [disabled]="!name || !email || !phone || !kvkkAccepted">Giriş Yap</button>
 	</form>
 </div>

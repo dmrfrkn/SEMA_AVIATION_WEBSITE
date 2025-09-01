@@ -12,10 +12,11 @@ export class VisitorFormComponent {
 	name: string = '';
 	email: string = '';
 	phone: string = '';
+	kvkkAccepted: boolean = false;
 	@Output() formCompleted = new EventEmitter<void>();
 
 	submitForm() {
-		if (this.name && this.email && this.phone) {
+		if (this.name && this.email && this.phone && this.kvkkAccepted) {
 			this.formCompleted.emit();
 		}
 	}
