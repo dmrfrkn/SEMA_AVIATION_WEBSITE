@@ -11,6 +11,14 @@
       <a href="#contact">İletişim</a>
     </nav>
   </header>
+
+  <!-- Duyuru/Banner Alanı Başlangıç -->
+  <div *ngIf="showBanner" class="announcement-banner">
+    <span class="banner-icon">📢</span>
+    <span class="banner-text">SEMA Aviation, Teknofest 2026 finalinde! Takımımıza başarılar dileriz.</span>
+    <button class="banner-close" (click)="showBanner = false" aria-label="Kapat">&times;</button>
+  </div>
+  <!-- Duyuru/Banner Alanı Bitiş -->
   <section class="hero">
     <div class="hero-text">
       <div class="hero-title">SEMA Aviation<br />Yenilikçi İHA Takımı</div>

@@ -9,6 +9,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './app.scss'
 })
 export class App implements OnInit {
+  showBanner = true;
   counters = [
     { label: 'Tamamlanan Proje', value: 8, animatedValue: 8 },
     { label: 'Kazanılan Ödül', value: 2, animatedValue: 2 },

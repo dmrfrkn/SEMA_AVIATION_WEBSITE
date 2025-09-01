@@ -1,3 +1,56 @@
+// Duyuru/Banner modern görünüm
+.announcement-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.1rem;
+  background: linear-gradient(90deg, #ffe082 80%, #fff8e1 100%);
+  color: #232b36;
+  font-size: 1.13rem;
+  font-weight: 600;
+  padding: 0.85rem 1.7rem;
+  border-radius: 0 0 18px 18px;
+  box-shadow: 0 4px 24px 0 #ffe08233;
+  margin-bottom: 1.2rem;
+  position: relative;
+  animation: fadeInDown 0.5s cubic-bezier(0.4,0,0.2,1);
+}
+.banner-icon {
+  font-size: 1.5rem;
+  margin-right: 0.3rem;
+}
+.banner-text {
+  flex: 1;
+}
+.banner-close {
+  background: none;
+  border: none;
+  color: #232b36;
+  font-size: 1.7rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 1.2rem;
+  transition: color 0.18s;
+  opacity: 0.7;
+}
+.banner-close:hover {
+  color: #b71c1c;
+  opacity: 1;
+}
+@media (max-width: 700px) {
+  .announcement-banner {
+    font-size: 0.98rem;
+    padding: 0.7rem 0.5rem;
+    border-radius: 0 0 10px 10px;
+  }
+  .banner-icon {
+    font-size: 1.1rem;
+  }
+  .banner-close {
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+  }
+}
 // Animasyonlu Sayaçlar modern görünüm
 
 .counter-section {
