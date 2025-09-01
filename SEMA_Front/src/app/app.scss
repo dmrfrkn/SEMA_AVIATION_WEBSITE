@@ -746,9 +746,13 @@ h1, h2, h3, h4, h5, h6 {
     gap: 18px;
   }
   .team-list {
-    flex-direction: column;
-    gap: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
     align-items: center;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 
