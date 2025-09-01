@@ -1,14 +1,17 @@
 import { Component, OnInit } from '@angular/core';
+import { VisitorFormComponent } from './visitor-form/visitor-form';
+import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CommonModule],
+  imports: [RouterOutlet, CommonModule, VisitorFormComponent, FormsModule],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
 export class App implements OnInit {
+  visitorFormCompleted = false;
   showBanner = true;
   counters = [
     { label: 'Tamamlanan Proje', value: 8, animatedValue: 8 },
@@ -20,6 +23,10 @@ export class App implements OnInit {
   ngOnInit() {
     this.animateCounters();
   }
+
+    onVisitorFormCompleted() {
+      this.visitorFormCompleted = true;
+    }
 
   animateCounters() {
     this.counters.forEach((counter, idx) => {

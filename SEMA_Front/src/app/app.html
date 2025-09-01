@@ -1,16 +1,22 @@
 
 
-<div class="container">
-  <header>
-    <img src="assets/sema_logo.png" alt="SEMA Aviation Logo" class="logo-img" />
-    <nav class="navbar">
-      <a href="#" class="active">Ana Sayfa</a>
-      <a href="#about">Hakkımızda</a>
-      <a href="#services">Projeler</a>
-      <a href="#team">Takım</a>
-      <a href="#contact">İletişim</a>
-    </nav>
-  </header>
+<ng-container *ngIf="!visitorFormCompleted">
+  <div class="visitor-form-overlay">
+    <visitor-form (formCompleted)="onVisitorFormCompleted()"></visitor-form>
+  </div>
+</ng-container>
+<ng-container *ngIf="visitorFormCompleted">
+  <div class="container">
+    <header>
+      <img src="assets/sema_logo.png" alt="SEMA Aviation Logo" class="logo-img" />
+      <nav class="navbar">
+        <a href="#" class="active">Ana Sayfa</a>
+        <a href="#about">Hakkımızda</a>
+        <a href="#services">Projeler</a>
+        <a href="#team">Takım</a>
+        <a href="#contact">İletişim</a>
+      </nav>
+    </header>
 
   <!-- Duyuru/Banner Alanı Başlangıç -->
   <div *ngIf="showBanner" class="announcement-banner">
@@ -64,38 +70,30 @@
     </div>
   </section>
   <section class="team-section" id="team">
-    <h2>Takım Üyeleri</h2>
-    <div class="team-list">
-      <div class="team-card">
-        <img src="assets/takim_foto.jpeg" alt="Kaan Karaman" />
-        <div class="team-info">
-          <h4>Kaan Karaman</h4>
-          <p class="team-role">Takım Kaptanı</p>
-          <p class="team-bio">Yapay zekâ, otonom sistemler ve havacılık teknolojileri alanında uzman. Takım lideri olarak inovasyon ve takım ruhunu ön planda tutar.</p>
-          <div class="team-socials">
-            <a href="https://linkedin.com/in/kaankaraman" target="_blank" aria-label="LinkedIn">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="24" height="24" rx="4" fill="#0A66C2"/>
-                <path d="M7.5 8.5C8.32843 8.5 9 7.82843 9 7C9 6.17157 8.32843 5.5 7.5 5.5C6.67157 5.5 6 6.17157 6 7C6 7.82843 6.67157 8.5 7.5 8.5Z" fill="white"/>
-                <rect x="6" y="10" width="3" height="8" rx="1.5" fill="white"/>
-                <path d="M12 10H14.5C16.1569 10 17.5 11.3431 17.5 13V18H15V13.5C15 13.2239 14.7761 13 14.5 13C14.2239 13 14 13.2239 14 13.5V18H12V10Z" fill="white"/>
-              </svg>
-            </a>
-            <a href="https://instagram.com/kaankaraman" target="_blank" aria-label="Instagram">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <radialGradient id="ig1" cx="0.5" cy="0.5" r="0.8">
-                  <stop offset="0%" stop-color="#f9ce34"/>
-                  <stop offset="50%" stop-color="#ee2a7b"/>
-                  <stop offset="100%" stop-color="#6228d7"/>
-                </radialGradient>
-                <rect width="24" height="24" rx="6" fill="url(#ig1)"/>
-                <circle cx="12" cy="12" r="5" stroke="white" stroke-width="2" fill="none"/>
-                <circle cx="18" cy="6" r="1.2" fill="white"/>
-              </svg>
-            </a>
+      <ng-container *ngIf="visitorFormCompleted">
+        <h2>Takım Üyeleri</h2>
+        <div class="team-list">
+          <div class="team-card">
+            <img src="assets/takim_foto.jpeg" alt="Kaan Karaman" />
+            <div class="team-info">
+              <h4>Kaan Karaman</h4>
+              <p class="team-role">Takım Kaptanı</p>
+              <p class="team-bio">Yapay zekâ, otonom sistemler ve havacılık teknolojileri alanında uzman. Takım lideri olarak inovasyon ve takım ruhunu ön planda tutar.</p>
+              <div class="team-socials">
+                <a href="https://linkedin.com/in/kaankaraman" target="_blank" aria-label="LinkedIn">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="24" height="24" rx="4" fill="#0A66C2"/>
+                    <path d="M7.5 8.5C8.32843 8.5 9 7.82843 9 7C9 6.17157 8.32843 5.5 7.5 5.5C6.67157 5.5 6 6.17157 6 7C6 7.82843 6.67157 8.5 7.5 8.5Z" fill="white"/>
+                    <rect x="6" y="10" width="3" height="8" rx="1.5" fill="white"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </ng-container>
+                <!-- SVG ve HTML hatalı kapanışlar kaldırıldı, sadeleştirildi -->
+  <!-- Fazla kapanışlar kaldırıldı -->
       <div class="team-card">
         <img src="assets/takim_foto.jpeg" alt="Furkan Demir" />
         <div class="team-info">
@@ -156,8 +154,7 @@
           </div>
         </div>
       </div>
-    </div>
-  </section>
+  <!-- Fazla kapanışlar kaldırıldı -->
   <section class="projects-section" id="services">
   <!-- Proje Galerisi Başlangıç (Profesyonel) -->
     <div class="project-gallery">
@@ -284,7 +281,7 @@
       <li><strong>Instagram:</strong> <a href="https://instagram.com/semaaviation" target="_blank">@semaaviation</a></li>
     </ul>
   </section>
-</div>
+<!-- Fazla kapanış kaldırıldı -->
 <router-outlet />
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->

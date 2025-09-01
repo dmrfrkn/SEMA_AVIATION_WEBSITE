@@ -1,0 +1,26 @@
+<div class="form-bg">
+	<form (ngSubmit)="submitForm()" #visitorForm="ngForm" class="visitor-form">
+		<div class="form-icon">
+			<svg width="56" height="56" viewBox="0 0 24 24" fill="none">
+				<circle cx="12" cy="12" r="12" fill="#7c3aed"/>
+				<path d="M8 12v-2a4 4 0 1 1 8 0v2" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+				<rect x="8" y="12" width="8" height="6" rx="2" fill="#fff"/>
+				<circle cx="12" cy="15" r="1" fill="#7c3aed"/>
+			</svg>
+		</div>
+		<h2 class="form-title">Ziyaretçi Girişi</h2>
+		<div class="form-group">
+			<label for="name">Ad Soyad</label>
+			<input id="name" type="text" [(ngModel)]="name" name="name" required placeholder="Adınızı ve Soyadınızı yazınız" />
+		</div>
+		<div class="form-group">
+			<label for="email">Email</label>
+			<input id="email" type="email" [(ngModel)]="email" name="email" required placeholder="E-posta adresiniz" />
+		</div>
+		<div class="form-group">
+			<label for="phone">Telefon Numarası</label>
+			<input id="phone" type="tel" [(ngModel)]="phone" name="phone" required placeholder="05xx xxx xx xx" pattern="^0[5-9]{1}[0-9]{9}$" maxlength="11" />
+		</div>
+		<button type="submit" [disabled]="!name || !email || !phone">Giriş Yap</button>
+	</form>
+</div>

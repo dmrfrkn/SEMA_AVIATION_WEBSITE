@@ -1,0 +1,79 @@
+
+.visitor-form-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 9999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	min-width: 100vw;
+	background: linear-gradient(120deg, #7c3aed 0%, #38bdf8 60%, #f472b6 100%);
+.form-bg {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+}
+.visitor-form {
+	background: #fff;
+	padding: 2.5rem 2.5rem 2rem 2.5rem;
+	border-radius: 2rem;
+	box-shadow: 0 8px 40px 0 #7c3aed44, 0 1.5px 8px 0 #38bdf844;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	min-width: 340px;
+	max-width: 95vw;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+.form-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 70px;
+	height: 70px;
+	background: #fff;
+	border-radius: 50%;
+	box-shadow: 0 2px 12px #7c3aed33;
+
+		border-radius: 0.7rem;
+		padding: 0.9rem 1.5rem;
+		font-weight: bold;
+		font-size: 1.1rem;
+		cursor: pointer;
+		transition: background 0.2s;
+		margin-top: 0.7rem;
+		box-shadow: 0 1px 8px #38bdf833;
+	}
+	.visitor-form button:disabled {
+		background: #888;
+		color: #eee;
+		cursor: not-allowed;
+	}
+	border: 1.5px solid #ffe082;
+}
+.visitor-form button {
+	background: linear-gradient(90deg, #ffe082 60%, #ffd54f 100%);
+	color: #232a34;
+	border: none;
+	border-radius: 0.7rem;
+	padding: 0.9rem 1.5rem;
+	font-weight: bold;
+	font-size: 1.1rem;
+	cursor: pointer;
+	transition: background 0.2s;
+	margin-top: 0.7rem;
+}
+.visitor-form button:disabled {
+	background: #888;
+	color: #eee;
+	cursor: not-allowed;
+}
