@@ -1,13 +1,8 @@
 <div class="form-bg">
-	<form (ngSubmit)="submitForm()" #visitorForm="ngForm" class="visitor-form">
-		<div class="form-icon">
-			<svg width="56" height="56" viewBox="0 0 24 24" fill="none">
-				<circle cx="12" cy="12" r="12" fill="#7c3aed"/>
-				<path d="M8 12v-2a4 4 0 1 1 8 0v2" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-				<rect x="8" y="12" width="8" height="6" rx="2" fill="#fff"/>
-				<circle cx="12" cy="15" r="1" fill="#7c3aed"/>
-			</svg>
-		</div>
+		<form (ngSubmit)="submitForm()" #visitorForm="ngForm" class="visitor-form">
+			<div class="form-logo">
+				<img src="assets/sema_logo.png" alt="Takım Logosu" />
+			</div>
 		<h2 class="form-title">Ziyaretçi Girişi</h2>
 		<div class="form-group">
 			<label for="name">Ad Soyad</label>
