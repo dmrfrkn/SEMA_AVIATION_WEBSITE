@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
@@ -8,12 +8,12 @@ import { CommonModule } from '@angular/common';
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
-export class App {
+export class App implements OnInit {
   counters = [
-    { label: 'Tamamlanan Proje', value: 12, animatedValue: 0 },
-    { label: 'Kazanılan Ödül', value: 7, animatedValue: 0 },
-    { label: 'Takım Üyesi', value: 18, animatedValue: 0 },
-    { label: 'Uçuş Testi', value: 34, animatedValue: 0 }
+    { label: 'Tamamlanan Proje', value: 8, animatedValue: 8 },
+    { label: 'Kazanılan Ödül', value: 2, animatedValue: 2 },
+    { label: 'Takım Üyesi', value: 30, animatedValue: 30 },
+    { label: 'Uçuş Testi', value: 22, animatedValue: 22 }
   ];
 
   ngOnInit() {
