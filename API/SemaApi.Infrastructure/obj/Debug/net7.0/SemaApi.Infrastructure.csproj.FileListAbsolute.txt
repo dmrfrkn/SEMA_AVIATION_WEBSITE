@@ -1,8 +1,3 @@
-E:\Teknofest_Sema_İha_Takımı\SEMA SİTE\API\SemaApi.Infrastructure\obj\Debug\net7.0\SemaApi.Infrastructure.csproj.AssemblyReference.cache
-E:\Teknofest_Sema_İha_Takımı\SEMA SİTE\API\SemaApi.Infrastructure\obj\Debug\net7.0\SemaApi.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
-E:\Teknofest_Sema_İha_Takımı\SEMA SİTE\API\SemaApi.Infrastructure\obj\Debug\net7.0\SemaApi.Infrastructure.AssemblyInfoInputs.cache
-E:\Teknofest_Sema_İha_Takımı\SEMA SİTE\API\SemaApi.Infrastructure\obj\Debug\net7.0\SemaApi.Infrastructure.AssemblyInfo.cs
-E:\Teknofest_Sema_İha_Takımı\SEMA SİTE\API\SemaApi.Infrastructure\obj\Debug\net7.0\SemaApi.Infrastructure.csproj.CoreCompileInputs.cache
 E:\Teknofest_Sema_İha_Takımı\SEMA SİTE\API\SemaApi.Infrastructure\bin\Debug\net7.0\SemaApi.Infrastructure.deps.json
 E:\Teknofest_Sema_İha_Takımı\SEMA SİTE\API\SemaApi.Infrastructure\bin\Debug\net7.0\SemaApi.Infrastructure.dll
 E:\Teknofest_Sema_İha_Takımı\SEMA SİTE\API\SemaApi.Infrastructure\bin\Debug\net7.0\SemaApi.Infrastructure.pdb
@@ -10,6 +5,11 @@ E:\Teknofest_Sema_İha_Takımı\SEMA SİTE\API\SemaApi.Infrastructure\bin\Debug\
 E:\Teknofest_Sema_İha_Takımı\SEMA SİTE\API\SemaApi.Infrastructure\bin\Debug\net7.0\SemaApi.Domain.dll
 E:\Teknofest_Sema_İha_Takımı\SEMA SİTE\API\SemaApi.Infrastructure\bin\Debug\net7.0\SemaApi.Domain.pdb
 E:\Teknofest_Sema_İha_Takımı\SEMA SİTE\API\SemaApi.Infrastructure\bin\Debug\net7.0\SemaApi.Application.pdb
+E:\Teknofest_Sema_İha_Takımı\SEMA SİTE\API\SemaApi.Infrastructure\obj\Debug\net7.0\SemaApi.Infrastructure.csproj.AssemblyReference.cache
+E:\Teknofest_Sema_İha_Takımı\SEMA SİTE\API\SemaApi.Infrastructure\obj\Debug\net7.0\SemaApi.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\Teknofest_Sema_İha_Takımı\SEMA SİTE\API\SemaApi.Infrastructure\obj\Debug\net7.0\SemaApi.Infrastructure.AssemblyInfoInputs.cache
+E:\Teknofest_Sema_İha_Takımı\SEMA SİTE\API\SemaApi.Infrastructure\obj\Debug\net7.0\SemaApi.Infrastructure.AssemblyInfo.cs
+E:\Teknofest_Sema_İha_Takımı\SEMA SİTE\API\SemaApi.Infrastructure\obj\Debug\net7.0\SemaApi.Infrastructure.csproj.CoreCompileInputs.cache
 E:\Teknofest_Sema_İha_Takımı\SEMA SİTE\API\SemaApi.Infrastructure\obj\Debug\net7.0\SemaApi.Infrastructure.csproj.CopyComplete
 E:\Teknofest_Sema_İha_Takımı\SEMA SİTE\API\SemaApi.Infrastructure\obj\Debug\net7.0\SemaApi.Infrastructure.dll
 E:\Teknofest_Sema_İha_Takımı\SEMA SİTE\API\SemaApi.Infrastructure\obj\Debug\net7.0\refint\SemaApi.Infrastructure.dll

@@ -16,5 +16,10 @@ namespace SemaApi.Infrastructure
             _context.Visitors.Add(visitor);
             await _context.SaveChangesAsync();
         }
+
+        public async Task<bool> VisitorExistsAsync(string email, string phone)
+        {
+            return await Task.FromResult(_context.Visitors.Any(v => v.Email == email || v.Phone == phone));
+        }
     }
 }

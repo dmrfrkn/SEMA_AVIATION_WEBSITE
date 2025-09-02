@@ -17,8 +17,12 @@ namespace SemaApi.Controllers
         [HttpPost]
         public async Task<IActionResult> AddVisitor([FromBody] Visitor visitor)
         {
+            if (await _visitorService.VisitorExistsAsync(visitor.Email, visitor.Phone))
+            {
+                return Ok(new { message = "Bu e-posta veya telefon ile zaten kayıt yapılmış." });
+            }
             await _visitorService.AddVisitorAsync(visitor);
-            return Ok();
+            return Ok(new { message = "Kayıt başarılı." });
         }
     }
 }
