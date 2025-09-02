@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "SemaApi.Application/1.0.0": {
+        "dependencies": {
+          "SemaApi.Domain": "1.0.0"
+        },
+        "runtime": {
+          "SemaApi.Application.dll": {}
+        }
+      },
+      "SemaApi.Domain/1.0.0": {
+        "runtime": {
+          "SemaApi.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SemaApi.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SemaApi.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

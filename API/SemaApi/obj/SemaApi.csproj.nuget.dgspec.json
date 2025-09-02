@@ -1,0 +1,273 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Teknofest_Sema_İha_Takımı\\SEMA SİTE\\API\\SemaApi\\SemaApi.csproj": {}
+  },
+  "projects": {
+    "E:\\Teknofest_Sema_İha_Takımı\\SEMA SİTE\\API\\SemaApi.Application\\SemaApi.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Teknofest_Sema_İha_Takımı\\SEMA SİTE\\API\\SemaApi.Application\\SemaApi.Application.csproj",
+        "projectName": "SemaApi.Application",
+        "projectPath": "E:\\Teknofest_Sema_İha_Takımı\\SEMA SİTE\\API\\SemaApi.Application\\SemaApi.Application.csproj",
+        "packagesPath": "C:\\Users\\CumFur\\.nuget\\packages\\",
+        "outputPath": "E:\\Teknofest_Sema_İha_Takımı\\SEMA SİTE\\API\\SemaApi.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\CumFur\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "E:\\Teknofest_Sema_İha_Takımı\\SEMA SİTE\\API\\SemaApi.Domain\\SemaApi.Domain.csproj": {
+                "projectPath": "E:\\Teknofest_Sema_İha_Takımı\\SEMA SİTE\\API\\SemaApi.Domain\\SemaApi.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Teknofest_Sema_İha_Takımı\\SEMA SİTE\\API\\SemaApi.Domain\\SemaApi.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Teknofest_Sema_İha_Takımı\\SEMA SİTE\\API\\SemaApi.Domain\\SemaApi.Domain.csproj",
+        "projectName": "SemaApi.Domain",
+        "projectPath": "E:\\Teknofest_Sema_İha_Takımı\\SEMA SİTE\\API\\SemaApi.Domain\\SemaApi.Domain.csproj",
+        "packagesPath": "C:\\Users\\CumFur\\.nuget\\packages\\",
+        "outputPath": "E:\\Teknofest_Sema_İha_Takımı\\SEMA SİTE\\API\\SemaApi.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\CumFur\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Teknofest_Sema_İha_Takımı\\SEMA SİTE\\API\\SemaApi.Infrastructure\\SemaApi.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Teknofest_Sema_İha_Takımı\\SEMA SİTE\\API\\SemaApi.Infrastructure\\SemaApi.Infrastructure.csproj",
+        "projectName": "SemaApi.Infrastructure",
+        "projectPath": "E:\\Teknofest_Sema_İha_Takımı\\SEMA SİTE\\API\\SemaApi.Infrastructure\\SemaApi.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\CumFur\\.nuget\\packages\\",
+        "outputPath": "E:\\Teknofest_Sema_İha_Takımı\\SEMA SİTE\\API\\SemaApi.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\CumFur\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "E:\\Teknofest_Sema_İha_Takımı\\SEMA SİTE\\API\\SemaApi.Application\\SemaApi.Application.csproj": {
+                "projectPath": "E:\\Teknofest_Sema_İha_Takımı\\SEMA SİTE\\API\\SemaApi.Application\\SemaApi.Application.csproj"
+              },
+              "E:\\Teknofest_Sema_İha_Takımı\\SEMA SİTE\\API\\SemaApi.Domain\\SemaApi.Domain.csproj": {
+                "projectPath": "E:\\Teknofest_Sema_İha_Takımı\\SEMA SİTE\\API\\SemaApi.Domain\\SemaApi.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.18, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Teknofest_Sema_İha_Takımı\\SEMA SİTE\\API\\SemaApi\\SemaApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Teknofest_Sema_İha_Takımı\\SEMA SİTE\\API\\SemaApi\\SemaApi.csproj",
+        "projectName": "SemaApi",
+        "projectPath": "E:\\Teknofest_Sema_İha_Takımı\\SEMA SİTE\\API\\SemaApi\\SemaApi.csproj",
+        "packagesPath": "C:\\Users\\CumFur\\.nuget\\packages\\",
+        "outputPath": "E:\\Teknofest_Sema_İha_Takımı\\SEMA SİTE\\API\\SemaApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\CumFur\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "E:\\Teknofest_Sema_İha_Takımı\\SEMA SİTE\\API\\SemaApi.Application\\SemaApi.Application.csproj": {
+                "projectPath": "E:\\Teknofest_Sema_İha_Takımı\\SEMA SİTE\\API\\SemaApi.Application\\SemaApi.Application.csproj"
+              },
+              "E:\\Teknofest_Sema_İha_Takımı\\SEMA SİTE\\API\\SemaApi.Domain\\SemaApi.Domain.csproj": {
+                "projectPath": "E:\\Teknofest_Sema_İha_Takımı\\SEMA SİTE\\API\\SemaApi.Domain\\SemaApi.Domain.csproj"
+              },
+              "E:\\Teknofest_Sema_İha_Takımı\\SEMA SİTE\\API\\SemaApi.Infrastructure\\SemaApi.Infrastructure.csproj": {
+                "projectPath": "E:\\Teknofest_Sema_İha_Takımı\\SEMA SİTE\\API\\SemaApi.Infrastructure\\SemaApi.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.7, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

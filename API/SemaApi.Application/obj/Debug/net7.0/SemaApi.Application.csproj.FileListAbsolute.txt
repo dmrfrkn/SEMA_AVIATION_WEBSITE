@@ -1,0 +1,15 @@
+E:\Teknofest_Sema_İha_Takımı\SEMA SİTE\API\SemaApi.Application\bin\Debug\net7.0\SemaApi.Application.deps.json
+E:\Teknofest_Sema_İha_Takımı\SEMA SİTE\API\SemaApi.Application\bin\Debug\net7.0\SemaApi.Application.dll
+E:\Teknofest_Sema_İha_Takımı\SEMA SİTE\API\SemaApi.Application\bin\Debug\net7.0\SemaApi.Application.pdb
+E:\Teknofest_Sema_İha_Takımı\SEMA SİTE\API\SemaApi.Application\bin\Debug\net7.0\SemaApi.Domain.dll
+E:\Teknofest_Sema_İha_Takımı\SEMA SİTE\API\SemaApi.Application\bin\Debug\net7.0\SemaApi.Domain.pdb
+E:\Teknofest_Sema_İha_Takımı\SEMA SİTE\API\SemaApi.Application\obj\Debug\net7.0\SemaApi.Application.csproj.AssemblyReference.cache
+E:\Teknofest_Sema_İha_Takımı\SEMA SİTE\API\SemaApi.Application\obj\Debug\net7.0\SemaApi.Application.GeneratedMSBuildEditorConfig.editorconfig
+E:\Teknofest_Sema_İha_Takımı\SEMA SİTE\API\SemaApi.Application\obj\Debug\net7.0\SemaApi.Application.AssemblyInfoInputs.cache
+E:\Teknofest_Sema_İha_Takımı\SEMA SİTE\API\SemaApi.Application\obj\Debug\net7.0\SemaApi.Application.AssemblyInfo.cs
+E:\Teknofest_Sema_İha_Takımı\SEMA SİTE\API\SemaApi.Application\obj\Debug\net7.0\SemaApi.Application.csproj.CoreCompileInputs.cache
+E:\Teknofest_Sema_İha_Takımı\SEMA SİTE\API\SemaApi.Application\obj\Debug\net7.0\SemaApi.Application.csproj.CopyComplete
+E:\Teknofest_Sema_İha_Takımı\SEMA SİTE\API\SemaApi.Application\obj\Debug\net7.0\SemaApi.Application.dll
+E:\Teknofest_Sema_İha_Takımı\SEMA SİTE\API\SemaApi.Application\obj\Debug\net7.0\refint\SemaApi.Application.dll
+E:\Teknofest_Sema_İha_Takımı\SEMA SİTE\API\SemaApi.Application\obj\Debug\net7.0\SemaApi.Application.pdb
+E:\Teknofest_Sema_İha_Takımı\SEMA SİTE\API\SemaApi.Application\obj\Debug\net7.0\ref\SemaApi.Application.dll

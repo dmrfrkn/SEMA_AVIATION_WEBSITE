@@ -1,0 +1,12 @@
+E:\Teknofest_Sema_İha_Takımı\SEMA SİTE\API\SemaApi.Domain\bin\Debug\net7.0\SemaApi.Domain.deps.json
+E:\Teknofest_Sema_İha_Takımı\SEMA SİTE\API\SemaApi.Domain\bin\Debug\net7.0\SemaApi.Domain.dll
+E:\Teknofest_Sema_İha_Takımı\SEMA SİTE\API\SemaApi.Domain\bin\Debug\net7.0\SemaApi.Domain.pdb
+E:\Teknofest_Sema_İha_Takımı\SEMA SİTE\API\SemaApi.Domain\obj\Debug\net7.0\SemaApi.Domain.csproj.AssemblyReference.cache
+E:\Teknofest_Sema_İha_Takımı\SEMA SİTE\API\SemaApi.Domain\obj\Debug\net7.0\SemaApi.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Teknofest_Sema_İha_Takımı\SEMA SİTE\API\SemaApi.Domain\obj\Debug\net7.0\SemaApi.Domain.AssemblyInfoInputs.cache
+E:\Teknofest_Sema_İha_Takımı\SEMA SİTE\API\SemaApi.Domain\obj\Debug\net7.0\SemaApi.Domain.AssemblyInfo.cs
+E:\Teknofest_Sema_İha_Takımı\SEMA SİTE\API\SemaApi.Domain\obj\Debug\net7.0\SemaApi.Domain.csproj.CoreCompileInputs.cache
+E:\Teknofest_Sema_İha_Takımı\SEMA SİTE\API\SemaApi.Domain\obj\Debug\net7.0\SemaApi.Domain.dll
+E:\Teknofest_Sema_İha_Takımı\SEMA SİTE\API\SemaApi.Domain\obj\Debug\net7.0\refint\SemaApi.Domain.dll
+E:\Teknofest_Sema_İha_Takımı\SEMA SİTE\API\SemaApi.Domain\obj\Debug\net7.0\SemaApi.Domain.pdb
+E:\Teknofest_Sema_İha_Takımı\SEMA SİTE\API\SemaApi.Domain\obj\Debug\net7.0\ref\SemaApi.Domain.dll
