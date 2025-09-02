@@ -5,8 +5,8 @@
 		</div>
 		<h2 class="form-title">Ziyaretçi Girişi</h2>
 		<div class="form-group">
-			<label for="name">Ad Soyad</label>
-			<input id="name" type="text" [(ngModel)]="name" name="name" required placeholder="Adınızı ve Soyadınızı yazınız" />
+			<label for="fullName">Ad Soyad</label>
+			<input id="fullName" type="text" [(ngModel)]="fullName" name="fullName" required placeholder="Adınızı ve Soyadınızı yazınız" />
 		</div>
 		<div class="form-group">
 			<label for="email">Email</label>
@@ -23,10 +23,10 @@
 						Web sitemize giriş yaparak kişisel verilerinizin belirtilen amaçlar doğrultusunda işlenmesine açık rıza göstermiş oluyorsunuz.
 					</div>
 			<div class="kvkk-confirm">
-				<input type="checkbox" id="kvkk" [(ngModel)]="kvkkAccepted" name="kvkkAccepted" required />
+				<input type="checkbox" id="kvkk" [(ngModel)]="kvkkConsent" name="kvkkConsent" required />
 				<label for="kvkk">KVKK metnini okudum ve onaylıyorum.</label>
 			</div>
 		</div>
-		<button type="submit" [disabled]="!name || !email || !phone || !kvkkAccepted">Giriş Yap</button>
+	<button type="submit" [disabled]="!fullName || !email || !phone || !kvkkConsent">Giriş Yap</button>
 	</form>
 </div>
