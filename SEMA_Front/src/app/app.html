@@ -2,7 +2,8 @@
 
 <ng-container *ngIf="!visitorFormCompleted">
   <div class="visitor-form-overlay">
-    <visitor-form (formCompleted)="onVisitorFormCompleted()"></visitor-form>
+    <visitor-form (formCompleted)="onVisitorFormCompleted()">
+    </visitor-form>
   </div>
 </ng-container>
 <ng-container *ngIf="visitorFormCompleted">
@@ -15,8 +16,9 @@
     <a href="#team">Takım</a>
     <a href="#projects">Projeler</a>
     <a href="#news">Haberler</a>
-    <a href="#faq">SSS</a>
-    <a href="#contact">İletişim</a>
+  <a href="#faq">SSS</a>
+  <a href="#contact">İletişim</a>
+
       </nav>
     </header>
 

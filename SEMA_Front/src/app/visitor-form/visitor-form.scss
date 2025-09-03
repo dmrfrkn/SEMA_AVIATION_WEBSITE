@@ -21,22 +21,39 @@
 	height: 100vh;
 	min-height: 100vh;
 	min-width: 100vw;
+	position: relative;
+	background: none;
+}
+
+.form-bg::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 340px;
+	height: 340px;
+	background: url('/assets/sema_logo.png') no-repeat center center;
+	background-size: 60%;
+	opacity: 0.08;
+	z-index: 1;
+	pointer-events: none;
 }
 
 .visitor-form {
 	background: #fff;
-	padding: 2rem 1.5rem 1.5rem 1.5rem;
-	border-radius: 2rem;
-	box-shadow: 0 8px 32px 0 #7c3aed44, 0 1.5px 8px 0 #38bdf844;
+	padding: 1.2rem 1rem 1rem 1rem;
 	display: flex;
 	flex-direction: column;
-	gap: 1.5rem;
-	min-width: 320px;
-	max-width: 380px;
+	gap: 1.1rem;
+	min-width: 260px;
+	max-width: 320px;
 	width: 100%;
 	align-items: center;
 	justify-content: center;
 	position: relative;
+	position: relative;
+	z-index: 2;
 }
 
 .form-logo {
@@ -117,3 +134,24 @@
 	color: #eee;
 	cursor: not-allowed;
 }
+	.kvkk-text {
+		max-height: 90px;
+		overflow-y: auto;
+		font-size: 0.95rem;
+		color: #232a34;
+		margin-bottom: 0.5rem;
+		padding-right: 0.3rem;
+	}
+	.kvkk-confirm {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+	}
+	.kvkk-confirm input[type="checkbox"] {
+		margin-right: 0.5rem;
+	}
+	.kvkk-confirm label {
+		color: #7c3aed;
+		font-size: 1rem;
+		font-weight: 500;
+	}

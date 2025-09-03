@@ -3,6 +3,7 @@ import { VisitorFormComponent } from './visitor-form/visitor-form';
 import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { AdminPanelComponent } from './admin-panel';
 
 @Component({
   selector: 'app-root',
