@@ -20,9 +20,16 @@ export class AdminLoginComponent {
 
   login() {
     if (this.username === 'furkanadmin' && this.password === '996644') {
+      // Admin girişi başarılı, session storage'a kaydet
+      sessionStorage.setItem('isAdmin', 'true');
+      sessionStorage.setItem('adminUser', this.username);
       this.router.navigate(['/admin']);
     } else {
       this.error = 'Kullanıcı adı veya şifre yanlış!';
     }
+  }
+
+  goBack() {
+    this.router.navigate(['/']);
   }
 }

@@ -1,15 +1,21 @@
-<div class="admin-login-container">
-  <h2>Admin Girişi</h2>
-  <form (ngSubmit)="login()" #loginForm="ngForm">
-    <div class="form-group">
-      <label for="username">Kullanıcı Adı</label>
-      <input id="username" name="username" [(ngModel)]="username" required />
+<div class="admin-login-page">
+  <div class="admin-login-container">
+    <div class="login-header">
+      <img src="/assets/sema_logo.png" alt="SEMA Logo" class="login-logo">
+      <h2>Admin Girişi</h2>
     </div>
-    <div class="form-group">
-      <label for="password">Şifre</label>
-      <input id="password" name="password" type="password" [(ngModel)]="password" required />
-    </div>
-    <button type="submit">Giriş Yap</button>
-    <div *ngIf="error" class="error-message">{{error}}</div>
-  </form>
+    <form (ngSubmit)="login()" #loginForm="ngForm">
+      <div class="form-group">
+        <label for="username">Kullanıcı Adı</label>
+        <input id="username" name="username" [(ngModel)]="username" required placeholder="Kullanıcı adınızı girin" />
+      </div>
+      <div class="form-group">
+        <label for="password">Şifre</label>
+        <input id="password" name="password" type="password" [(ngModel)]="password" required placeholder="Şifrenizi girin" />
+      </div>
+      <button type="submit" [disabled]="!username || !password">Giriş Yap</button>
+      <div *ngIf="error" class="error-message">{{error}}</div>
+      <button type="button" class="back-btn" (click)="goBack()">← Ana Sayfaya Dön</button>
+    </form>
+  </div>
 </div>

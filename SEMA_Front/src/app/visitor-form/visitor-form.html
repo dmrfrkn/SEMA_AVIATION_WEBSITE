@@ -28,6 +28,6 @@
 			</div>
 		</div>
 	<button type="submit" [disabled]="!fullName || !email || !phone || !kvkkConsent">Giriş Yap</button>
-	<button style="margin-top:1rem;width:100%;padding:1rem;background:#e74c3c;color:#fff;font-weight:bold;border:none;border-radius:8px;cursor:pointer;" routerLink="/admin-login" type="button">Admin girişi yapmak için tıklayın</button>
+	<button style="margin-top:1rem;width:100%;padding:1rem;background:#e74c3c;color:#fff;font-weight:bold;border:none;border-radius:8px;cursor:pointer;" (click)="goToAdminLogin()" type="button">Admin girişi yapmak için tıklayın</button>
 	</form>
 </div>

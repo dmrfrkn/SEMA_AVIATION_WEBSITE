@@ -1,8 +1,17 @@
 
+<!-- Admin sayfaları için router outlet - sadece admin route'larında göster -->
+<div *ngIf="isAdminRoute()">
+  <router-outlet />
+</div>
+
+<!-- Ana sayfa içeriği - admin route'larında gizle -->
+<div *ngIf="!isAdminRoute()">
 
 <ng-container *ngIf="!visitorFormCompleted">
   <div class="visitor-form-overlay">
-    <visitor-form (formCompleted)="onVisitorFormCompleted()">
+    <visitor-form 
+      (formCompleted)="onVisitorFormCompleted()"
+      (adminLoginRequested)="onGoToAdminLogin()">
     </visitor-form>
   </div>
 </ng-container>
@@ -282,8 +291,11 @@
       <li><strong>Instagram:</strong> <a href="https://instagram.com/semaaviation" target="_blank">@semaaviation</a></li>
     </ul>
   </section>
-<!-- Fazla kapanış kaldırıldı -->
-<router-outlet />
+
+  </div> <!-- container div kapanışı -->
+</ng-container>
+<!-- Ana sayfa içeriği kapanışı -->
+</div>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->

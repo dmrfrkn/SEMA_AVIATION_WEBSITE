@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 import { VisitorFormComponent } from './visitor-form/visitor-form';
 import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { AdminPanelComponent } from './admin-panel';
+import { filter } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +16,7 @@ import { AdminPanelComponent } from './admin-panel';
 export class App implements OnInit {
   visitorFormCompleted = false;
   showBanner = true;
+  isAdminPage = false;
   counters = [
     { label: 'Tamamlanan Proje', value: 8, animatedValue: 8 },
     { label: 'Kazanılan Ödül', value: 2, animatedValue: 2 },
@@ -21,15 +24,49 @@ export class App implements OnInit {
     { label: 'Uçuş Testi', value: 22, animatedValue: 22 }
   ];
 
+  constructor(private router: Router) {}
+
   ngOnInit() {
     this.animateCounters();
+    
+    // Route değişikliklerini dinle
+    this.router.events
+      .pipe(filter(event => event instanceof NavigationEnd))
+      .subscribe((event: NavigationEnd) => {
+        this.isAdminPage = event.url.includes('/admin');
+        console.log('Route changed:', event.url, 'isAdminPage:', this.isAdminPage);
+      });
+      
+    // İlk yüklemede de kontrol et
+    this.isAdminPage = this.router.url.includes('/admin');
   }
 
-    onVisitorFormCompleted() {
-      this.visitorFormCompleted = true;
-    }
+  onVisitorFormCompleted() {
+    this.visitorFormCompleted = true;
+  }
 
-  animateCounters() {
+	onGoToAdminLogin() {
+		console.log('Ana component admin login navigation');
+		console.log('Current route:', this.router.url);
+		
+		// Overlay'i kapat ve admin login'e git
+		this.visitorFormCompleted = true;
+		
+		// Route değiştir
+		this.router.navigate(['/admin-login']).then(
+			(success) => {
+				console.log('Navigation successful:', success);
+				console.log('New route:', this.router.url);
+			},
+			(error) => {
+				console.error('Navigation failed:', error);
+			}
+		);
+	}
+
+	isAdminRoute(): boolean {
+		return this.isAdminPage;
+	}  animateCounters() {
     this.counters.forEach((counter, idx) => {
       const duration = 1200; // ms
       const frameRate = 24;

@@ -1,4 +1,5 @@
 import { Component, Output, EventEmitter } from '@angular/core';
+import { Router } from '@angular/router';
 import { VisitorService } from './visitor.service';
 import { FormsModule } from '@angular/forms';
 
@@ -15,26 +16,42 @@ export class VisitorFormComponent {
 	phone: string = '';
 	kvkkConsent: boolean = false;
 	@Output() formCompleted = new EventEmitter<void>();
+	@Output() adminLoginRequested = new EventEmitter<void>();
 
-	constructor(private visitorService: VisitorService) {}
+	constructor(private visitorService: VisitorService, private router: Router) {}
 
 	submitForm() {
 		if (this.fullName && this.email && this.phone && this.kvkkConsent) {
 			const visitor = {
+				id: Date.now(), // Basit ID üretimi
 				fullName: this.fullName,
 				email: this.email,
 				phone: this.phone,
 				kvkkConsent: this.kvkkConsent,
-				createdAt: new Date().toISOString()
+				registrationDate: new Date().toLocaleDateString('tr-TR')
 			};
+
+			// localStorage'a kaydet
+			const existingVisitors = JSON.parse(localStorage.getItem('visitors') || '[]');
+			existingVisitors.push(visitor);
+			localStorage.setItem('visitors', JSON.stringify(existingVisitors));
+
+			// API'ye de gönder
 			this.visitorService.addVisitor(visitor).subscribe({
 				next: () => {
 					this.formCompleted.emit();
 				},
 				error: (err) => {
-					alert('Ziyaretçi kaydı başarısız: ' + err.message);
+					// API hatası olsa bile localStorage'a kaydedildiği için devam et
+					console.warn('API hatası:', err);
+					this.formCompleted.emit();
 				}
 			});
 		}
+	}
+
+	goToAdminLogin() {
+		console.log('Admin button clicked - using event emit');
+		this.adminLoginRequested.emit();
 	}
 }
