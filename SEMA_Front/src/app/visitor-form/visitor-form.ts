@@ -23,17 +23,22 @@ export class VisitorFormComponent {
 	submitForm() {
 		if (this.fullName && this.email && this.phone && this.kvkkConsent) {
 			const visitor = {
-				id: Date.now(), // Basit ID üretimi
 				fullName: this.fullName,
 				email: this.email,
 				phone: this.phone,
-				kvkkConsent: this.kvkkConsent,
+				kvkkConsent: this.kvkkConsent
+			};
+
+			// localStorage için ayrı bir obje oluştur (ID ve tarih ile)
+			const visitorForStorage = {
+				id: Date.now(),
+				...visitor,
 				registrationDate: new Date().toLocaleDateString('tr-TR')
 			};
 
 			// localStorage'a kaydet
 			const existingVisitors = JSON.parse(localStorage.getItem('visitors') || '[]');
-			existingVisitors.push(visitor);
+			existingVisitors.push(visitorForStorage);
 			localStorage.setItem('visitors', JSON.stringify(existingVisitors));
 
 			// API'ye de gönder
